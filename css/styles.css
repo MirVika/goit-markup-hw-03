@@ -1,0 +1,252 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --acent-text-color: #2196f3;
+  --secondary-acent-text-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --secondary-bcd-button-color: #188ce8;
+  --bcd-black: #2f303a;
+}
+
+body {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+/* logo */
+
+.logo {
+  color: #2196f3;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+span {
+  color: #000000;
+}
+
+/* site nav */
+
+.list {
+  list-style: none;
+}
+.site-nav a {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  cursor: pointer;
+}
+.site-nav.list a:hover,
+.site-nav.list a:focus {
+  color: var(--acent-text-color);
+}
+.site-nav .current-cover {
+    color: var(--acent-text-color)
+}
+
+.contacts a {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.contacts.list a:hover,
+.contacts.list a:focus {
+  color: var(--acent-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+/* hero */
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-color: var(--bcd-black);
+}
+.primary.button {
+  color: var(--secondary-acent-text-color);
+  background-color: var(--acent-text-color);
+}
+
+/* section */
+.section-title {
+  color: var(--title-text-color);
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+/* button */
+
+.button :active {
+  color: var(--secondary-bcd-button-color);
+}
+ .button {
+  color: var(--secondary-acent-text-color);
+  background-color: var(--acent-text-color);
+  border-color: var(--acent-text-color);
+
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+.primary.button {
+  color: var(--secondary-acent-text-color);
+  background-color: var(--acent-text-color);
+  border-color: var(--acent-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.06em;
+  border: inherit;
+}
+
+.secondary.button:focus,
+.secondary.button:hover {
+  color: var(--secondary-acent-text-color);
+  background-color: var(--acent-text-color);
+}
+
+.secondary.button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  border-color: var(--secondary-background-color);
+  border: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+}
+
+/* benefits */
+
+.benefits-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.benefits-list {
+  list-style: none;
+}
+.benefits-list .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+}
+
+/* team */
+
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+}
+.our-team {
+  background-color: var(--secondary-background-color);
+}
+
+/* footer */
+.contact a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.contact.list a:hover,
+.contact.list a:focus {
+  color: var(--acent-text-color);
+}
+.address a {
+  color: var(--secondary-acent-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24/14);
+}
+
+footer a {
+  font-style: normal;
+}
+.footer-logo {
+  color: var(--secondary-acent-text-color);
+}
+.background-footer {
+  background-color: var(--bcd-black);
+}
+
+/* portfolio */
+/* examples */
+
+.examples .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.examples .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}
+.examples {
+  list-style: none;
+}
+
+.project-list .button {
+  list-style: none;
+  cursor: pointer;
+}
+.project-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+}
+
+/* цвет основного текста #757575
+/* вторичный цвет текста #212121
+/* цветлого черный #000000
+/* цвет лого голубой #2196F3
+/* белый цвет  #FFFFFF
+/* бекграунд футер цвет черный #2F303A
+/* бэкграунд для кнопок портфолио #F5F4FA
+/* цвет фона страницы вторичный #F5F4FA */
+/* цвет фона страницы основной #FFFFFF */
