@@ -32,9 +32,13 @@ span {
 }
 
 /* site nav */
-
+.container {
+  background-color: tomato;
+}
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .site-nav a {
   color: var(--title-text-color);
@@ -59,6 +63,7 @@ span {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .contacts.list a:hover,
 .contacts.list a:focus {
@@ -71,16 +76,20 @@ span {
 
 /* hero */
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   text-align: center;
   text-transform: uppercase;
+  background-color: teal;
 }
 
 .hero {
   background-color: var(--bcd-black);
+  text-align: center;
 }
 .primary.button {
   color: var(--secondary-acent-text-color);
@@ -101,27 +110,33 @@ span {
 
 .button :active {
   color: var(--secondary-bcd-button-color);
+  border: 1px transparent;
 }
  .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
   color: var(--secondary-acent-text-color);
   background-color: var(--acent-text-color);
-  border-color: var(--acent-text-color);
+  border: 1px transparent;
 
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
+
+  text-align: center;
 }
 
 .primary.button {
   color: var(--secondary-acent-text-color);
   background-color: var(--acent-text-color);
-  border-color: var(--acent-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.06em;
   border: inherit;
+  border: 1px transparent;
 }
 
 .secondary.button:focus,
@@ -138,15 +153,20 @@ span {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
+  border: 1px transparent;
 }
 
 /* benefits */
+.container {
+  background-color: tomato;
+}
 
 .benefits-list .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
+  
 }
 .visual-hidden {
   position: absolute;
@@ -163,6 +183,7 @@ span {
 }
 .benefits-list {
   list-style: none;
+  margin-top: 0;
 }
 .benefits-list .text {
     font-weight: 400;
@@ -230,8 +251,9 @@ footer a {
   list-style: none;
 }
 
+.project-list {list-style: none;}
+
 .project-list .button {
-  list-style: none;
   cursor: pointer;
 }
 .project-title {
