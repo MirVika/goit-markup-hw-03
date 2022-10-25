@@ -85,7 +85,7 @@ span {
   display: flex;
   margin-left: auto;
 }
-.contacs .item {
+.contacts .item {
   margin-right: 50px;
 }
 .contacts a {
@@ -191,6 +191,7 @@ span {
 
 .benefits-list {
   display: flex;
+  padding-left: 0px;
 }
 
 .benefits-list .item + .item {
@@ -248,14 +249,24 @@ section {
   margin-bottom: 50;
 }
 
-.what-we-do .item {
+.do-item {
   display: flex;
+}
+.picture + .picture {
+  margin-left: 30px;
 }
 
 /* team */
 
-.list .team {
+.team {
   display: flex;
+}
+
+.team-item + .team-item {
+  margin-left: 30px;
+}
+.team-item {
+  text-align: center;
 }
 
 .team-title {
@@ -299,11 +310,19 @@ footer a {
 }
 .footer-logo {
   color: var(--secondary-acent-text-color);
+  margin-bottom: 30px;
 }
+
 .background-footer {
   background-color: var(--bcd-black);
 }
 
+.address {
+  margin-bottom: 9px;
+}
+.mail {
+  margin-bottom: 9px;
+}
 /* portfolio */
 /* examples */
 
@@ -323,9 +342,24 @@ footer a {
 }
 .examples {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
-
+.element {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.element:nth-child(3n) {
+  margin-right: 0pt;
+}
+.element:nth-last-child(-n+3){
+  margin-bottom: 0px;
+}
 .project-list {list-style: none;}
+.project-list {
+  display: flex;
+}
 
 .project-list .button {
   cursor: pointer;
@@ -335,7 +369,12 @@ footer a {
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
+
 }
+.project-title + .project-title {
+  margin-left: 8px;
+}
+
 
 /* цвет основного текста #757575
 /* вторичный цвет текста #212121
