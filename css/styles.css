@@ -86,7 +86,7 @@ span {
   margin-left: auto;
 }
 .contacs .item {
-  margin-right: 50;
+  margin-right: 50px;
 }
 .contacts a {
   color: var(--primary-text-color);
@@ -197,8 +197,8 @@ span {
   margin-left: 50;
 }
 section {
-  padding-top: 94;
-  padding-bottom: 94;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .benefits-list .title {
@@ -248,9 +248,13 @@ section {
   margin-bottom: 50;
 }
 
+.what-we-do .item {
+  display: flex;
+}
+
 /* team */
 
-.item-team {
+.list .team {
   display: flex;
 }
 
