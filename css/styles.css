@@ -359,6 +359,9 @@ footer a {
 .project-list {list-style: none;}
 .project-list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+  
 }
 
 .project-list .button {
