@@ -155,7 +155,7 @@ span {
 .hero {
   background-color: var(--bcd-black);
   text-align: center;
-  padding: 200px;
+  padding: 200px 0px;
 }
 .primary.button {
   color: var(--secondary-acent-text-color);
@@ -201,10 +201,11 @@ span {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   border: inherit;
   border: none transparent;
-  padding: 6px 32px;
+  padding: 10px 32px;
+  margin-top: 40px;
 }
 
 .secondary.button:focus,
@@ -220,7 +221,7 @@ span {
   border: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(30 / 16);
+  line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   border: none transparent;
 }
@@ -240,7 +241,7 @@ span {
 
 .benefits-list .title {
   margin-top: 0;
-  margin-bottom: 10;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -297,10 +298,6 @@ span {
   display: flex;
 }
 
-.our-team {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
 
 .team-item + .team-item {
   margin-left: 30px;
@@ -324,10 +321,6 @@ span {
   background-color: var(--secondary-background-color);
 }
 
-.team-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
 .team-element {
   font-family: 'Roboto';
     font-weight: 400;
@@ -336,7 +329,10 @@ span {
     text-align: center;
     letter-spacing: 0.03em;
     padding-top: 10px;
-    padding-bottom: 30px;
+}
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 p {
@@ -348,6 +344,9 @@ p {
 .contact a {
   color: var(--primary-text-color);
   text-decoration: none;
+}
+.address-item .address {
+  color: var(--secondary-acent-text-color);
 }
 .contact.list a:hover,
 .contact.list a:focus {
@@ -374,16 +373,32 @@ footer a {
   padding-bottom: 60px;
 }
 
-.address-item:nth-last-child(-n+3) {
+.address-item:not(:last-child) {
   margin-bottom: 9px;
-  font-style: normal;
+}
+.address-item {
+  margin-top: 20px;
 }
 
 /* portfolio */
 /* examples */
 
+
+
 .head {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.prime.button {
+  color: var(--secondary-acent-text-color);
+  background-color: var(--acent-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  border: inherit;
+  border: none transparent;
+  padding: 6px 22px;
 }
 .examples .title {
   color: var(--title-text-color);
@@ -408,6 +423,11 @@ footer a {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  
+}
+.ex-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .element:nth-child(3n) {
   margin-right: 0pt;
@@ -423,7 +443,7 @@ footer a {
 .project-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .project-list .button {
